@@ -1,7 +1,6 @@
-# Boarding Management System — Modern Rebuild
+# Boarding Management System 
 
-A rebuilt, modern-UI version of the original boarding house admin system. Same
-core idea (rooms, students, payments, complaints) rewritten with a clean
+A boarding house system. core idea (rooms, students, payments, complaints) written with a clean
 dashboard UI, secure database access, and a working login.
 
 ## Two portals
@@ -11,20 +10,18 @@ dashboard UI, secure database access, and a working login.
   Student ID + password to see their room, payment history, and to view or
   send their own complaints. Demo login: `STU001` / `student123`.
 
-## What changed from the original
+## Featurs
 
 - **Modern UI**: Tailwind CSS-based dashboard with a dark sidebar, gradient
   accents, stat cards, and responsive layout (mobile-friendly sidebar toggle).
-- **Security**: All SQL now uses PDO prepared statements (the original used
+- **Security**: All SQL  uses PDO prepared statements (the original used
   raw string-interpolated queries, which were vulnerable to SQL injection).
   Passwords are hashed with `password_hash()` / verified with
   `password_verify()`.
-- **Completed the app**: The original zip only contained a handful of admin
-  files and referenced many missing pages (`config/db.php`, `auth/logout.php`,
-  `rooms.php`, `view_students.php`, etc.). This rebuild fills in the full
+- **Completed the app**: . This  fills in the full
   CRUD flow for Rooms, Students, Payments and Complaints, plus a real login
   system and dashboard with live stats and a revenue chart.
-- **Added a student portal**: students now have their own login, dashboard,
+- **Added a student portal**: students  have their own login, dashboard,
   profile page (with password change), and can view/send their own
   complaints — separate from the admin side, with a teal color scheme so
   it's visually distinct from the admin's indigo theme.
